@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <h2>Welcome 👋</h2>
+  <p>Create an account or log in to manage your tasks.</p>
+  <div>
+    <a class="btn btn-primary" href="{{ url_for('auth.register') }}">Get Started</a>
+  </div>
+</div>
+{% endblock %}

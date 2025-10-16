@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <h2>Your Tasks</h2>
+  <form method="post" action="{{ url_for('main.create_task') }}">
+    <input name="title" placeholder="Task title" required>
+    <textarea name="description" placeholder="Description (optional)"></textarea>
+    <button class="btn btn-primary" type="submit">Add Task</button>
+  </form>
+</div>
+{% for t in tasks %}
+  <div class="card">
+    <h3 style="margin:0">{{ t.title }}</h3>
+    <p style="margin:.25rem 0 0 0">{{ t.description }}</p>
+    <p>Status: {% if t.done %}✅ Done{% else %}🕒 Pending{% endif %}</p>
+    <form style="display:inline" method="post" action="{{ url_for('main.toggle_task', task_id=t.id) }}">
+      <button class="btn" type="submit">{% if t.done %}Mark Pending{% else %}Mark Done{% endif %}</button>
+    </form>
+    <form style="display:inline" method="post" action="{{ url_for('main.delete_task', task_id=t.id) }}">
+      <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+  </div>
+{% else %}
+  <p>No tasks yet. Create your first task above!</p>
+{% endfor %}
+{% endblock %}
