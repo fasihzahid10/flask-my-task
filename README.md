@@ -63,7 +63,7 @@ flask-task-manager/
 └─ .gitignore
 ```
 
-## 💼 LinkedIn blurb (paste & edit)
+## 💼 LinkedIn blurb (linkedin.com/in/muhammad-fasih-zahid-343093211)
 > Built and shipped a Flask Task Manager with auth, CRUD, SQLite, and a small REST API. Added tests + Dockerfile for smooth deploys. Repo link in comments—feedback welcome!
 
 **License:** MIT
