@@ -1,4 +1,5 @@
 # flask-task-manager
+🚀 Built and shipped a Flask Task Manager with auth, CRUD, SQLite, and a small REST API. Added tests + Dockerfile for smooth deploys. Repo link in comments—feedback welcome!
 
 A **production-ready, portfolio-grade Flask Task Manager** with:
 - User auth (register/login/logout) via Flask-Login
@@ -63,7 +64,6 @@ flask-task-manager/
 └─ .gitignore
 ```
 
-## 💼 LinkedIn blurb (linkedin.com/in/muhammad-fasih-zahid-343093211)
-> Built and shipped a Flask Task Manager with auth, CRUD, SQLite, and a small REST API. Added tests + Dockerfile for smooth deploys. Repo link in comments—feedback welcome!
+## 🤝 Connect with me
+- [LinkedIn](https://www.linkedin.com/in/muhammad-fasih-zahid-343093211)
 
-**License:** MIT
